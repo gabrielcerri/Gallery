@@ -1,6 +1,6 @@
+const title = document.getElementById("title").children
 
+for (let i=0; i<title.length; i++) {
 
-	const title =document.querySelectorAll('path')
-
-
-console.log(title)
+	console.log(`Letter ${i} is ${title[i].getTotalLength()} `)
+}
