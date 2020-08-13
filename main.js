@@ -1,6 +1,24 @@
-const title = document.getElementById("title").children
+const modal = document.getElementById("modalGallery")
+const modalImg = document.getElementById("img")
+const captionText = document.getElementById("cap")
+var span = document.getElementsByClassName("close")[0];
 
-for (let i=0; i<title.length; i++) {
 
-	console.log(`Letter ${i} is ${title[i].getTotalLength()} `)
+function moreInfo (element) {
+	
+
+	let eachImg = element.src
+
+	modal.style.display = "block";
+ 	modalImg.src = element.src;
+  	captionText.innerHTML = element.alt;
+	
+}
+
+
+
+
+
+span.onclick = function() {
+  modal.style.display = "none";
 }
