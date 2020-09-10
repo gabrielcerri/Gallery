@@ -22,3 +22,10 @@ function moreInfo (element) {
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+window.onkeydown = function () {
+	if (event.key === "Escape" ) {
+		  modal.style.display = "none";
+
+	}
+}
